@@ -19,9 +19,9 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '6128343599:AAFE6KC2xEpQGq61ZvC5OZzFkpu6aZh
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1491400016').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/") # ADMIN USERNAME
+USERNAME = environ.get('USERNAME', "https://t.me/Mobarak46") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001654008278'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/JisshuMovieZone')
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/jailmoviehdbackup_08')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -69,7 +69,7 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-START_IMG = (environ.get('START_IMG', '')).split()
+START_IMG = (environ.get('START_IMG', 'https://graph.org/file/777171cb8cd8fb6a5a98a-600f88d6fe1a8ed816.jpg')).split()
 FORCESUB_IMG = environ.get('FORCESUB_IMG', '')
 REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
 PAYPICS = (environ.get('PAYPICS', '')).split()
