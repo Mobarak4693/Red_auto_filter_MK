@@ -25,7 +25,7 @@ MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/jailmoviehdback
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001853672009').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mobarakserverchange:rYuCrCKnnusJZk4Y@cluster0.vsdxb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "redfilter")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #---------------------------------------------------------------
@@ -70,10 +70,10 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 START_IMG = (environ.get('START_IMG', 'https://graph.org/file/777171cb8cd8fb6a5a98a-600f88d6fe1a8ed816.jpg')).split()
-FORCESUB_IMG = environ.get('FORCESUB_IMG', '')
+FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://graph.org/file/777171cb8cd8fb6a5a98a-600f88d6fe1a8ed816.jpg')
 REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
-PAYPICS = (environ.get('PAYPICS', '')).split()
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', ''))
+PAYPICS = (environ.get('PAYPICS', 'https://graph.org/file/ac16d4cf3c1d01a5f0506-1632f0bffc741ac9a3.jpg')).split()
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/ac16d4cf3c1d01a5f0506-1632f0bffc741ac9a3.jpg'))
 REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -92,7 +92,7 @@ IMDB_TEMPLATE = environ.get('IMDB_TEMPLATE', f'{script.IMDB_TEMPLATE_TXT}')
 LONG_IMDB_DESCRIPTION = is_enabled('LONG_IMDB_DESCRIPTION', False)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
 SPELL_CHECK = is_enabled('SPELL_CHECK', True)
-LINK_MODE = is_enabled('LINK_MODE', True)
+LINK_MODE = is_enabled('LINK_MODE', False)
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
